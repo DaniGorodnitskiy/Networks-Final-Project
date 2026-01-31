@@ -56,13 +56,13 @@ You should see:
 **Important:** Do not close the server window!
 To simulate a conversation, you need to open **new** terminal windows for the clients.
 
-**Step A: Connect First User (Alice)**
+**Step A: Connect First User (Chechik)**
 1. Open a new terminal window.
 2. Run the client script:
 
        python client.py
 
-3. When prompted, enter a username (e.g., Alice).
+3. When prompted, enter a username (e.g., Chechik).
 4. You should see: `Connected to server`.
 
 **Step B: Connect Second User (Bob)**
@@ -71,12 +71,12 @@ To simulate a conversation, you need to open **new** terminal windows for the cl
 
        python client.py
 
-3. Enter a different username (e.g., Bob).
+3. Enter a different username (e.g., Nerli).
 
 ### 3. Usage
 To send a message, use the format: `RecipientName: Message`
 
-**Example (Alice sending to Bob):**
+**Example (Chechik sending to Nerli):**
 
     Bob: Hello Bob, did you get my packet?
 
