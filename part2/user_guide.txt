@@ -1,0 +1,44 @@
+Chat Application - User Guide & Execution Instructions
+======================================================
+
+Prerequisites:
+--------------
+1. Python 3.x installed and added to system PATH.
+2. Network access to localhost (127.0.0.1).
+
+Step-by-Step Execution:
+-----------------------
+
+1. Start the Server:
+   - Open a terminal (CMD) window.
+   - Navigate to the project folder.
+   - Run the command: 
+     python server.py
+   - You should see: "[*] Server listening on 127.0.0.1:9999"
+
+2. Connect Client A (e.g., Alice):
+   - Open a NEW terminal window.
+   - Navigate to the project folder.
+   - Run the command: 
+     python client.py
+   - When prompted "Enter your username:", type: Alice
+   - You should see: "Connected to server!"
+
+3. Connect Client B (e.g., Bob):
+   - Open a third terminal window.
+   - Run the command: 
+     python client.py
+   - When prompted "Enter your username:", type: Bob
+   - You should see: "Connected to server!"
+
+4. Usage (Messaging):
+   - In Alice's window, type the message in the format 'Recipient: Message'.
+   - Example: 
+     Bob: Hello Bob, how are you?
+   - Press Enter.
+   - Check Bob's window to verify the message was received.
+
+Troubleshooting:
+----------------
+- If 'python' is not recognized, try using 'python3' or 'py'.
+- Ensure port 9999 is free before running the server.
