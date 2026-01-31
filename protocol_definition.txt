@@ -1,0 +1,21 @@
+Server Data Structure Definition:
+---------------------------------
+The server utilizes an in-memory Python Dictionary to manage active client sessions.
+Database Type: Non-persistent (Runtime Memory).
+
+Structure: 
+    clients = { 
+        "username_string": socket_object 
+    }
+
+Key-Value Mapping:
+- Key: The unique username (String) provided by the client upon connection.
+- Value: The active TCP socket object enabling direct communication with the specific client.
+
+Application Layer Protocol:
+---------------------------
+1. Handshake: The first message sent by the client immediately after connection is treated as the 'Username'.
+2. Message Routing Format: "TargetName: Message Body"
+   - Delimiter: The server parses the string using the ':' character.
+   - Lookup: The server searches for 'TargetName' in the 'clients' dictionary.
+   - Action: If found, the server forwards 'Message Body' to the target's socket.
