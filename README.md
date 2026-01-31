@@ -65,7 +65,7 @@ To simulate a conversation, you need to open **new** terminal windows for the cl
 3. When prompted, enter a username (e.g., Chechik).
 4. You should see: `Connected to server`.
 
-**Step B: Connect Second User (Bob)**
+**Step B: Connect Second User (Nerli)**
 1. Open **another** new terminal window.
 2. Run the client script again:
 
@@ -78,7 +78,7 @@ To send a message, use the format: `RecipientName: Message`
 
 **Example (Chechik sending to Nerli):**
 
-    Bob: Hello Bob, did you get my packet?
+    Nerli: Hello Nerli, did you get my packet?
 
 ---
 
