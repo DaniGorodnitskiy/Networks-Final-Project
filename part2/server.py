@@ -40,7 +40,8 @@ def handle_client(client_socket):
     finally:
         if username in clients:
             del clients[username]
-        client_socket.close()
+            client_socket.close()
+            print(f"[-] User '{username}' disconnected.")  # הוספנו את השורה הזו
 
 def start_server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
